@@ -66,7 +66,7 @@ resource "aws_security_group" "vpc_sg_pub" {
 
 # RESOURCE: EC2
 data "template_file" "user_data" {
-    template = "${file("/scripts/user_data.sh")}"
+    template = "${file("/script/user_data.sh")}"
 }
 
 resource "aws_instance" "instance-1a" {
