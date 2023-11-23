@@ -1,7 +1,7 @@
 # PROVIDER
 terraform {
 
-  required_version = "~> 1.4"
+  required_version = "~> 11.6.2"
 
   required_providers {
     aws = {
@@ -21,3 +21,4 @@ terraform {
 
 provider "aws" {
   region                   = "us-east-1"
+}
